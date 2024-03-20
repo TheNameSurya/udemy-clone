@@ -14,7 +14,11 @@ body {
     justify-content: space-between;
     border-bottom: 1px solid black;
     gap: 20px;
+    position: sticky;
+    top: 0;
     align-items: center;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar_s1__title {
@@ -35,6 +39,7 @@ body {
     border: none;
     width: 100%;
     font-size: 17px;
+    background-color: transparent;
 }
 
 .navbar_s2 input:focus {
@@ -44,6 +49,29 @@ body {
 .navbar_s3 {
     display: flex;
     gap: 20px;
+
+}
+
+/* mylearing popup*/
+.mylearning {
+    cursor: pointer;
+    position: relative;
+}
+
+.mylearning__popup {
+    position: absolute;
+    top: 80%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    right: 5%;
+    display: none;
+
+}
+
+.mylearning:hover .mylearning__popup {
+
+    display: block;
 }
 
 .catagories {
@@ -63,37 +91,50 @@ body {
 .sale-image img {
     width: 100%;
 }
-.course-card
-{
-    width:400px
+
+.sale-image {
+    position: relative;
 }
-.course-card img
-{
-    width:100%;
+
+.sale-image__offer {
+    width: 20%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 1%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.course-card {
+    width: 400px
+}
+
+.course-card img {
+    width: 100%;
     height: 60%;
 }
-.Recommed__container
-{
+
+.Recommed__container {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     flex-wrap: wrap;
 
 }
-.Recommed
-{
-    padding:10px;
+
+.Recommed {
+    padding: 10px;
 }
 
-.topic__container
-{
+.topic__container {
     display: flex;
     gap: 10px;
     margin-top: 10px;
     flex-wrap: wrap;
 }
-.topic__container p
-{
+
+.topic__container p {
     padding: 10px;
     border: 1px solid black;
     flex-grow: 1;
@@ -101,38 +142,35 @@ body {
 
 }
 
-.popular
-{
+.popular {
     margin-top: 10px;
 }
 
-.Recommed__container
-{
+.Recommed__container {
     flex-wrap: wrap;
 
 
 }
 
-.footer__one
-{
+.footer__one {
     display: flex;
-    gap:15px;
+    gap: 15px;
 
 }
-.footer__two
-{
+
+.footer__two {
     display: flex;
     justify-content: space-between;
     margin: 20px;
     align-items: center;
 }
-.footer
-{
+
+.footer {
     padding: 30px;
-    color:white;
-    background-color:black;
+    color: white;
+    background-color: black;
 }
-.footer__one  p
-{
-    margin:20px;
+
+.footer__one p {
+    margin: 20px;
 }
