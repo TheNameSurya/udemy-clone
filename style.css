@@ -49,7 +49,6 @@ body {
 .navbar_s3 {
     display: flex;
     gap: 20px;
-
 }
 
 /* mylearing popup*/
@@ -57,23 +56,22 @@ body {
     cursor: pointer;
     position: relative;
 }
-
-.mylearning__popup {
+.mylearning__popup
+{
     position: absolute;
-    top: 80%;
-    background-color: white;
+    top:150%;
     border: 1px solid black;
-    padding: 10px;
-    right: 5%;
+    right:5%;
+    background-color:white;
     display: none;
+    width:210px;
+    padding: 10px;
 
 }
-
-.mylearning:hover .mylearning__popup {
-
+.mylearning:hover .mylearning__popup
+{
     display: block;
 }
-
 .catagories {
     display: flex;
     padding: 10px;
