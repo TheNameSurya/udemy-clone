@@ -84,6 +84,19 @@ body {
     padding: 10px;
     color: white;
     border-radius: 20px;
+    border: 1px solid #a778f3;
+    transition:0.5s;
+}
+
+
+.catagories p:hover
+{
+    border: 1px solid black;
+    transform: scale(110%);
+    transition:0.5s;
+    color:#a778f3 ;
+    background-color:white;
+
 }
 
 .sale-image img {
@@ -102,7 +115,20 @@ body {
     position: absolute;
     top: 10%;
     left: 10%;
+    animation-name: zoom;
+    animation-duration: 1s;    
 }
+@keyframes zoom {
+    0%
+    {
+        transform: scale(0%);
+    }
+    100%
+    {
+        transform: scale(100%);
+    }
+}
+
 
 .course-card {
     width: 400px
