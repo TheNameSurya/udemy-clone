@@ -50,28 +50,32 @@ body {
     display: flex;
     gap: 20px;
 }
-
+.navbar_s4
+{
+    display: none;
+}
 /* mylearing popup*/
 .mylearning {
     cursor: pointer;
     position: relative;
 }
-.mylearning__popup
-{
+
+.mylearning__popup {
     position: absolute;
-    top:150%;
+    top: 150%;
     border: 1px solid black;
-    right:5%;
-    background-color:white;
+    right: 5%;
+    background-color: white;
     display: none;
-    width:210px;
+    width: 210px;
     padding: 10px;
 
 }
-.mylearning:hover .mylearning__popup
-{
+
+.mylearning:hover .mylearning__popup {
     display: block;
 }
+
 .catagories {
     display: flex;
     padding: 10px;
@@ -85,18 +89,17 @@ body {
     color: white;
     border-radius: 20px;
     border: 1px solid #a778f3;
-    transition:0.5s;
+    transition: 0.5s;
     cursor: pointer;
 }
 
 
-.catagories p:hover
-{
+.catagories p:hover {
     border: 1px solid black;
     transform: scale(110%);
-    transition:0.5s;
-    color:#a778f3 ;
-    background-color:white;
+    transition: 0.5s;
+    color: #a778f3;
+    background-color: white;
 
 }
 
@@ -117,22 +120,28 @@ body {
     top: 10%;
     left: 10%;
     animation-name: zoom;
-    animation-duration: 1s;    
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
+
 @keyframes zoom {
-    0%
-    {
+    0% {
         transform: scale(0%);
+        opacity: 0;
     }
-    100%
-    {
+
+    100% {
         transform: scale(100%);
+        opacity: 1;
     }
 }
 
 
 .course-card {
-    width: 400px
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .course-card img {
@@ -198,4 +207,29 @@ body {
 
 .footer__one p {
     margin: 20px;
+}
+
+/* Media queries*/
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .course-card {
+        flex-basis: 40%;
+    }
+
+    .catagories {
+        display: none;
+    }
+    .navbar_s2,.navbar_s3
+    {
+        display: none;
+    }
+    .navbar_s4
+    {
+        display: block  ;
+    }
 }
